@@ -1,6 +1,8 @@
 # ESP8266_new_pwm
 This is a drop-in replacement for the ESP8266 SDK PWM
 
+If you like this project and want to support this and my other works, consider donating on [Liberapay][liberapay]
+
 The software PWM provided in the ESP8266 SDK from Espressif has several drawbacks:
 
 1. Duty cycle limited to 90% (at 1kHz PWM period)
@@ -30,7 +32,7 @@ above.
 Example usage:
 
 	#define PWM_CHANNELS 5
-	const uint32_t period = 5000 // * 200ns ^= 1 kHz
+	const uint32_t period = 5000; // * 200ns ^= 1 kHz
 
 	// PWM setup
 	uint32 io_info[PWM_CHANNELS][3] = {
@@ -60,3 +62,4 @@ Example usage:
   softtimer, there is a conflict. You can use NM1 for the PWM
   instead.**
 
+[liberapay]: https://liberapay.com/StefanB/
